@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeaTher</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="nav clearfix">
+            <!-- 顶部 -->
+            <div class="header"></div>
+            <!-- 导航和搜索框 -->
+            <div class="mainbav">
+                <div class="fl">
+                    <span class="icon"></span>
+                    <span class="city" id="location-city"></span>
+                </div>
+                <div class="fr search-box">
+                    <input type="text" class="fl search">
+                    <span class="fl search-icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-box">
+            <!-- 温度 -->
+            <div class="temp-box">
+                <div class="date-box">
+                    <span class="year date"></span>
+                    <span class="week"></span>
+                </div>
+                <div class="state">
+                    <span class="temp tem"></span>
+                    <span class="scd">℃</span>
+                    <div class="wth-sta">
+                        <span class="fine  wea" id="qing"></span>
+                        <span class="well air_level"></span>
+                    </div>
+                </div>
+                <!-- 风向 -->
+                <div class="wind">
+                    <span class="east win"></span>
+                    <span class="series win_speed"></span>
+                    <span class="speed win_meter"></span>
+                </div>
+            </div>
+            <!-- 24小时天气 -->
+            <div class="hours-wth">
+                <div class="hours-title">24小时天气</div>
+                <div class="auto clearfix">
+                    <ul id="hoursWeather" class="clearfix">
+                        <!-- <li>
+                            <div>08时</div>
+                            <div class="list-icon"></div>
+                            <div>30℃</div>
+                            <div>有八级大风</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 未来天气 -->
+            <div class="future-wth">
+                <div class="future-title">未来6天的天气</div>
+                <div class="future-list">
+                    <ul id="future-weather">
+                        <!-- <li>
+                            <span>21日</span>
+                            <span>
+                                <i class="future-icon">a</i>
+                            </span>
+                            <span>30℃</span>
+                            <span>持续风向</span>
+                        </li>  -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/rem.js"></script>
+    <script src="./js/jquery-1.10.2.min_65682a2.js"></script>
+    <script src="./js/getdata.js"></script>
+</body>
+
+</html>
